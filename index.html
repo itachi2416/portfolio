@@ -40,14 +40,14 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Yashas N profile picture" />
+            <img src="https://res.cloudinary.com/droh9kimy/image/upload/v1725971376/en5ihq4gmzbcekoklybk.jpg" alt="Yashas N profile picture" />
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Yashas N</h1>
             <p class="section__text__p2">Aspiring Data Analyst</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Yashas_Resume.pdf')">
+                <button class="btn btn-color-2" onclick="window.open('https://drive.google.com/file/d/128scz3IO35LZHcjqQf-qdFXJbZWWh2_8/view?usp=drive_link')">
                     Download CV
                 </button>
                 <button class="btn btn-color-1" onclick="location.href='#contact'">
@@ -55,11 +55,15 @@
                 </button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-                    onclick="location.href='https://linkedin.com/'" />
-                <img src="./assets/github.png" alt="My Github profile" class="icon"
-                    onclick="location.href='https://github.com/'" />
-            </div>
+                <a target="_blank" href="https://www.linkedin.com/in/yashas24/">
+                  <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+                </a>
+              
+                <a target="_blank" href="https://github.com/">
+                  <img src="./assets/github.png" alt="My Github profile" class="icon" />
+                </a>
+              </div>
+              
         </div>
     </section>
     <section id="about">
@@ -103,6 +107,13 @@
                 <div class="details-container">
                     <h2 class="experience-sub-title">Data Analysis</h2>
                     <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
@@ -193,35 +204,31 @@
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container      <div class=" contact-info-upper-container">
-            <div class="contact-details">
-                <div class="contact-detail-item">
-                    <img src="./assets/email.png" alt="Email icon" class="contact-icon" />
-                    <p>yashas.email@example.com</p>
-                </div>
-                <div class="contact-detail-item">
-                    <img src="./assets/phone.png" alt="Phone icon" class="contact-icon" />
-                    <p>+91 9876543210</p>
-                </div>
-                <div class="contact-detail-item">
-                    <img src="./assets/location.png" alt="Location icon" class="contact-icon" />
-                    <p>Bangalore, India</p>
-                </div>
-            </div>
-            <div class="contact-form">
-                <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required class="contact-form-input" />
-                    <input type="email" name="email" placeholder="Your Email" required class="contact-form-input" />
-                    <textarea name="message" rows="5" placeholder="Your Message" required
-                        class="contact-form-input"></textarea>
-                    <button type="submit" class="btn btn-color-1">Send Message</button>
-                </form>
-            </div>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
         </div>
-    </section>
-    <footer>
+      </section>
+    <!-- <footer>
         <p>&copy; 2024 Yashas N. All rights reserved.</p>
-    </footer>
+    </footer> -->
+    <div class="footer">
+        <p>&copy; 2024 Yashas N. All rights reserved.</p>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 

@@ -48,8 +48,7 @@
   }
   
   @media screen and (max-width: 600px) {
-    #contact,
-    footer {
+    #contact {
       height: 40vh;
     }
     #profile {
@@ -59,7 +58,7 @@
     article {
       font-size: 1rem;
     }
-    footer nav {
+     nav {
       height: fit-content;
       margin-bottom: 2rem;
     }
