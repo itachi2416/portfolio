@@ -65,6 +65,38 @@ a:hover {
 .logo:hover {
   cursor: default;
 }
+#skills {
+  padding: 50px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.rating {
+  font-size: 1.2em;
+  color: #f0ad4e; /* Color for the filled stars */
+}
+
+.star {
+  font-size: 1.2em;
+  color: #e0e0e0; /* Color for the unfilled stars */
+}
+
+.star.filled {
+  color: #f0ad4e; /* Color for the filled stars */
+}
 
 /* HAMBURGER MENU */
 
@@ -308,6 +340,13 @@ section {
   height: 80%;
 }
 
+.profile-img{
+  width: 350px;  /* Set width */
+    height: 350px; /* Set height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: contain; /* Ensures the image fits inside the circle without distortion */
+}
+
 .section__pic-container {
   height: 400px;
   width: 400px;
@@ -342,6 +381,9 @@ section {
   justify-content: space-around;
 }
 
+
+
+
 article {
   display: flex;
   width: 10rem;
@@ -366,8 +408,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 60%;
+  height: 60%;
 }
 
 .project-title {

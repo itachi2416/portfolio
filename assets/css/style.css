@@ -6,6 +6,7 @@
     .about-containers {
       flex-wrap: wrap;
     }
+    
     #contact,
     #projects {
       height: fit-content;
@@ -51,10 +52,18 @@
     #contact {
       height: 40vh;
     }
+    .section__pic-container{
+      margin-bottom: 230px;
+      height: auto;
+    }
+    .education-tag{
+      margin-bottom: 16px;
+    }
     #profile {
       height: 83vh;
       margin-bottom: 0;
     }
+  
     article {
       font-size: 1rem;
     }

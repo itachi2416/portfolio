@@ -1,235 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yashas N Portfolio</title>
     <link rel="stylesheet" href="assets/css/newstyle.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Yashas N</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Yashas N</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Yashas N</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+      <div class="logo">Yashas N</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="https://res.cloudinary.com/droh9kimy/image/upload/v1725971376/en5ihq4gmzbcekoklybk.jpg" alt="Yashas N profile picture" />
+      <div class="section__pic-container">
+        <img
+          src="https://res.cloudinary.com/droh9kimy/image/upload/v1726068224/uzki2wjqujrkmf0yybge.png"
+          alt="Yashas N profile picture"
+          class="profile-img"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Yashas N</h1>
+        <p class="section__text__p2">Aspiring Data Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://drive.google.com/file/d/128scz3IO35LZHcjqQf-qdFXJbZWWh2_8/view?usp=drive_link')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Yashas N</h1>
-            <p class="section__text__p2">Aspiring Data Analyst</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('https://drive.google.com/file/d/128scz3IO35LZHcjqQf-qdFXJbZWWh2_8/view?usp=drive_link')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <a target="_blank" href="https://www.linkedin.com/in/yashas24/">
-                  <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
-                </a>
-              
-                <a target="_blank" href="https://github.com/itachi2416">
-                  <img src="./assets/github.png" alt="My Github profile" class="icon" />
-                </a>
-              </div>
-              
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>Data Analytics Projects <br />SQL, Power BI, MySQL</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>Bachelor of Engineering<br />Electrical & Electronics</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        I am a passionate data analyst with a strong background in
-                        engineering. My experience spans across projects where I leveraged
-                        data analysis and visualization tools like SQL, Power BI, and
-                        MySQL. I am also keen on exploring sustainable agriculture
-                        solutions.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Data Analysis</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Proficient</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Proficient</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>SQL (MySQL)</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Power BI</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Data Engineering</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>ETL Pipelines</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Tableau</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">
-                        Big Basket Data Analysis
-                    </h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/itachi2416/Big_Basket_Analysis'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/itachi2416/Big_Basket_Analysis'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">
-                        World Layoff Analysis
-                    </h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/itachi2416/world_layoff_project'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/itachi2416/world_layoff_project'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
+        <div id="socials-container">
+          <a target="_blank" href="https://www.linkedin.com/in/yashas24/">
             <img
               src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
+              alt="My LinkedIn profile"
+              class="icon"
             />
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </a>
+
+          <a target="_blank" href="https://github.com/itachi2416">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="https://res.cloudinary.com/droh9kimy/image/upload/v1726068369/sq8v6pznhrdpdljnxcdk.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <h1 class="education-tag">Education</h1>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Bachelor of Engineering</h3>
+              <p>Electricals and Electronics Engineering</p>
+              <p>Passout - 2020-2024</p>
+              <p>CGPA - 7.03</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>12th Standard</h3>
+              <p>Passout - 2018</p>
+              <p>Percentage - 86.5</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="text-align: justify">
+              Driven by a passion for data and business strategy, I am a skilled
+              Data and Business Analyst with a strong background in engineering.
+              My expertise lies in harnessing the power of tools like MySQL,
+              Advanced Excel, Power BI, and Python (pandas, numpy, matplotlib)
+              to turn complex data into clear, actionable insights. I don’t just
+              work with numbers—I tell the story behind the data, empowering
+              businesses to make informed, strategic decisions. Whether
+              optimizing processes, uncovering growth opportunities, or
+              enhancing business performance, I take a proactive approach to
+              delivering data-driven solutions that have real impact. If you're
+              looking for someone who combines analytical precision with
+              business insight, I’m excited to bring my skills to the table and
+              help your organization thrive.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1"> Discover My Expertise</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical skill</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Advanced Excel</h3>
+                  <p class="rating">
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p class="rating">
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p class="rating">
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <p class="rating">
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft skill</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Problem-Solving</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Communication Skills</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Teamwork and Collaboration</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adaptability</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://res.cloudinary.com/droh9kimy/image/upload/v1726072395/zff3lwmxs6ncaje2ywci.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Big Basket Data Analysis
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/itachi2416/Big_Basket_Analysis'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/itachi2416/Big_Basket_Analysis'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://res.cloudinary.com/droh9kimy/image/upload/v1726072395/o0qwmhn4hl9ytvxomq08.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              World Layoff Analysis
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/itachi2416/world_layoff_project'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/itachi2416/world_layoff_project'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:yashasn.1si20ee049@gmail.com">yashasn.1si20ee049@gmail.com</a></p>
+
+        </div>
+        <div class="contact-info-container">
+          <a target="_blank" href="https://www.linkedin.com/in/yashas24/">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <p><a target="_blank" href="https://www.linkedin.com/in/yashas24/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
     <!-- <footer>
         <p>&copy; 2024 Yashas N. All rights reserved.</p>
     </footer> -->
     <div class="footer">
-        <p>&copy; 2024 Yashas N. All rights reserved.</p>
+      <p>&copy; 2024 Yashas N. All rights reserved.</p>
     </div>
     <script src="assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>
