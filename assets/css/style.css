@@ -8,6 +8,8 @@
     }
     
     #contact,
+    #experience,
+    #about,
     #projects {
       height: fit-content;
     }
