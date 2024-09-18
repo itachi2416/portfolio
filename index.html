@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yashas N Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/newstyle.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -37,7 +38,8 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
+    <section id="profile" data-aos="fade-up"
+    data-aos-duration="1000">
       <div class="section__pic-container">
         <img
           src="https://res.cloudinary.com/droh9kimy/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1726503498/my_photo1-removebg-preview_yehdil.png"
@@ -79,7 +81,8 @@
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" data-aos="fade-up"
+    data-aos-duration="1000">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
@@ -141,7 +144,8 @@
         onclick="location.href='#experience'"
       />
     </section>
-    <section id="experience">
+    <section id="experience" data-aos="fade-up"
+    data-aos-duration="1000">
       <p class="section__text__p1"> Discover My Expertise</p>
       <h1 class="title">Skills</h1>
       <div class="experience-details-container">
@@ -273,7 +277,8 @@
         onclick="location.href='#projects'"
       />
     </section>
-    <section id="projects">
+    <section id="projects" data-aos="fade-up"
+    data-aos-duration="1000">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
@@ -339,7 +344,8 @@
         onclick="location.href='#contact'"
       />
     </section>
-    <section id="contact">
+    <section id="contact" data-aos="fade-up"
+    data-aos-duration="1000">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -371,5 +377,9 @@
       <p>&copy; 2024 Yashas N. All rights reserved.</p>
     </div>
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
